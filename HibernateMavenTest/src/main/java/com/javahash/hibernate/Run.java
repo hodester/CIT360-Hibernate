@@ -7,6 +7,7 @@ public class Run {
  
 /**
  * 
+     * @param args
  */
  public static void main(String[] args) {
  Session session = HibernateSessionManager.getSessionFactory().openSession();
@@ -14,13 +15,14 @@ public class Run {
  session.beginTransaction();
  User user = new User();
  
- user.setUserId(5);
- user.setUsername("NewUser");
- user.setCreatedBy("Hibernate");
+ user.setUserId(9);
+ user.setUsername("AnotherUser");
+ user.setCreatedBy("Hibernate-test");
  user.setCreatedDate(new Date());
  
  session.save(user);
  session.getTransaction().commit();
+ 
  
 }
  

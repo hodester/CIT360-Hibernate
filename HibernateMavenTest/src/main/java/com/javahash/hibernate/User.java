@@ -50,5 +50,9 @@ public int getUserId() {
  public void setCreatedDate(Date createdDate) {
  this.createdDate = createdDate;
  }
+
+    void setUserId() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
  
 }
