@@ -6,7 +6,7 @@ import org.hibernate.Session;
 public class Run {
  
 /**
- * @param args
+ * 
  */
  public static void main(String[] args) {
  Session session = HibernateSessionManager.getSessionFactory().openSession();
@@ -14,9 +14,9 @@ public class Run {
  session.beginTransaction();
  User user = new User();
  
- user.setUserId(3);
- user.setUsername("gab");
- user.setCreatedBy("Application");
+ user.setUserId(5);
+ user.setUsername("NewUser");
+ user.setCreatedBy("Hibernate");
  user.setCreatedDate(new Date());
  
  session.save(user);
